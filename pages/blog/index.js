@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '@/components/Layout';
+import Layout from '../../components/Layout';
 import {LimitText, ParseHtml} from '../../utils/hook';
 import {HeaderSubtitle, CardNews, Subscribe, ArticleNews, HeaderMenus} from '../../components/generalPage';
 import styleFont from '../../styles/Font.module.css'; 
-import SwiperCustom from '@/components/General/Swiper';
+import SwiperCustom from '../../components/General/Swiper';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 

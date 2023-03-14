@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '@/components/Layout';
+import Layout from '../../components/Layout';
 import {Subscribe, HeaderSubtitle, CardNews} from '../../components/generalPage';
-import SwiperCustom from '@/components/General/Swiper';
+import SwiperCustom from '../../components/General/Swiper';
 
 export default function podcasts() {
     const responsiveSwiper = [
@@ -50,15 +50,9 @@ export default function podcasts() {
     ]
     return (
         <Layout title={"Podcasts"}>
-            <div className="flex flex-row mt-10 gap-10">
-                <div className="w-[500px] h-[300px]">
-                    <img 
-                        src='https://images.unsplash.com/photo-1534570122623-99e8378a9aa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-                        className='object-cover h-[300px] w-full'
-                    />
-                </div>
-                <div className="w-[850px]">
-                    <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row mt-10 gap-8 xl:gap-10">
+                <div className="w-full lg:w-[500px] h-[346px] xl:h-[300px]">
+                    <div className="flex lg:hidden lg:mb-0 mb-4 justify-between">
                         <div className='flex items-center gap-1'>
                             <p>&#x23AF;&#x23AF;</p>
                             <p className="text-sm uppercase font-medium">by elen jhosh</p>
@@ -69,11 +63,28 @@ export default function podcasts() {
                             <p className='text-base font-light'>5 min read</p>
                         </div>
                     </div>
-                    <div className="mt-6 block"><p className="text-5xl lg:text-6xl font-normal">The Definitive Helmut Newton Photobook Is Reissued&#x23AF;&#x23AF;for His 100th Birthday</p></div>
+                    <img 
+                        src='https://images.unsplash.com/photo-1534570122623-99e8378a9aa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+                        className='object-cover h-[346px] xl:h-[300px] w-full'
+                    />
+                </div>
+                <div className="w-full lg:w-[850px]">
+                    <div className="hidden lg:flex justify-between">
+                        <div className='flex items-center gap-1'>
+                            <p>&#x23AF;&#x23AF;</p>
+                            <p className="text-sm uppercase font-medium">by elen jhosh</p>
+                        </div>
+                        <div className='gap-3 text-gray-300 flex'>
+                            <p className='text-base font-light'>Feb 11</p>
+                            <p className='text-base font-extrabold'>&#183;</p>
+                            <p className='text-base font-light'>5 min read</p>
+                        </div>
+                    </div>
+                    <div className="mt-6 block"><p className="text-4xl md:text-5xl xl:text-6xl font-normal">The Definitive Helmut Newton Photobook Is Reissued&#x23AF;&#x23AF;for His 100th Birthday</p></div>
                 </div>
             </div>
             <div className="w-full flex flex-col border-[#252525] border mt-14 rounded-sm h-[200px]">
-                <div className="flex flex-row items-center justify-between px-20 pt-5">
+                <div className="flex flex-row items-center justify-between px-5 lg:px-20 pt-5">
                     <div className="flex items-center gap-5">
                         <div>
                             <button className="py-2 px-2 rounded-full border border-[#252525]">
@@ -141,7 +152,7 @@ export default function podcasts() {
                         </button>
                     </div>
                 </div>
-                <div className="w-full flex flex-col mt-8 px-20">
+                <div className="w-full flex flex-col mt-8 px-5 lg:px-20">
                     <div className='h-1 bg-gray-300 relative flex flex-row items-center'>
                         <div className="bg-[#252525] w-[300px] h-1 z-40"/>
                         <div className="h-2 w-2 rounded-full bg-[#252525] z-50"/>
@@ -152,8 +163,8 @@ export default function podcasts() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row mt-12 mb-24">
-                <div className="w-[500px] sticky top-20 flex flex-col border-r border-r-gray-300 items-center justify-center lg:justify-start mt-8 md:mt-0 md:w-2/5 lg:w-1/3 h-auto lg:h-[120px]">
+            <div className="flex flex-col-reverse lg:flex-row mt-12 mb-24 ">
+                <div className="w-full lg:w-[500px] lg:sticky top-20 flex flex-col border-r border-r-gray-300 items-end lg:items-center justify-end lg:justify-center xl:justify-start mt-8 lg:mt-8 h-auto lg:h-[120px]">
                     <div className="w-full md:w-3/4 md:pt-0 pt-8 flex justify-end items-end lg:h-2/5">
                         <p className="font-normal text-xl">Share this article</p>
                     </div>
@@ -161,36 +172,36 @@ export default function podcasts() {
                         <button>
                             <img 
                                 src='../IMAGES/google.svg'
-                                className='md:w-12 md:h-12 w-9 h-9 lg:w-10 lg:h-10 rounded-md'
+                                className='lg:w-10 lg:h-10 md:w-10 md:h-10 w-9 h-9 rounded-md'
                             />
                         </button>
                         <button>
                             <img 
                                 src='../IMAGES/facebook.svg'
-                                className='lg:w-10 lg:h-10 md:w-12 md:h-12 w-9 h-9 rounded-md'
+                                className='lg:w-10 lg:h-10 md:w-10 md:h-10 w-9 h-9 rounded-md'
                             />
                         </button>
                         <button>
                             <img 
                                 src='../IMAGES/linkein.svg'
-                                className='lg:w-10 lg:h-10 md:w-12 md:h-12 w-9 h-9 rounded-md'
+                                className='lg:w-10 lg:h-10 md:w-10 md:h-10 w-9 h-9 rounded-md'
                             />
                         </button>
                         <button>
                             <img 
                                 src='../IMAGES/twitter.svg'
-                                className='lg:w-10 lg:h-10 md:w-12 md:h-12 w-9 h-9 rounded-md'
+                                className='lg:w-10 lg:h-10 md:w-10 md:h-10 w-9 h-9 rounded-md'
                             />
                         </button>
                         <button>
                             <img 
                                 src='../IMAGES/dribbble.svg'
-                                className='lg:w-10 lg:h-10 md:w-12 md:h-12 w-9 h-9 rounded-md'
+                                className='lg:w-10 lg:h-10 md:w-10 md:h-10 w-9 h-9 rounded-md'
                             />
                         </button>
                     </div>
                 </div>
-                <div className="w-[850px] pl-14">
+                <div className="w-full lg:w-[850px] pl-0 lg:pl-8 xl:pl-14">
                     <p className="font-normal text-lg">
                         Before | settled in to watch Oprah's Sunday-night interview with the Duke and
                         Duchess of Sussex three nights ago, | had intended to write a story about her

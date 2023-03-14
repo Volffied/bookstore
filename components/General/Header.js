@@ -49,13 +49,13 @@ export default function Header() {
                                         Books
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link 
                                         href="/about"
                                         className={(router.pathname === "/about" ? "underline decoration-wavy text-secondary border-x border-t border-secondary" : "hover:underline hover:decoration-secondary decoration-wavy") + ' py-1 px-2 underline-offset-4 text-base transition-all ease-in-out duration-500'}>
                                         About
                                     </Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         <div className='lg:justify-between flex gap-4'>

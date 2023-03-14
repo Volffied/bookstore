@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '@/components/Layout'
+import Layout from '../../components/Layout'
 import styleFont from '../../styles/Font.module.css'; 
 import {HeaderSubtitle, BookNews, HeaderMenus, Subscribe, ArticleBooks} from '../../components/generalPage';
-import SwiperCustom from '@/components/General/Swiper';
+import SwiperCustom from '../../components/General/Swiper';
 import {LimitText, ParseHtml} from '../../utils/hook';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
