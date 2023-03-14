@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Sprat';
+  src: url('../public/FONTS/SPRAT/sprat-condensedblack.otf');
+  src: url('../public/FONTS/SPRAT/Sprat-CondensedBold.otf');
+  src: url('../public/FONTS/SPRAT/Sprat-CondensedLight.otf');
+  src: url('../public/FONTS/SPRAT/Sprat-CondensedMedium.otf');
+  src: url('../public/FONTS/SPRAT/Sprat-CondesedRegular.otf');
+  src: url('../public/FONTS/SPRAT/Sprat_Variable.ttf');
+  src: url('../public/FONTS/SPRAT/Sprat-ExtendedBlack.otf');
+}
+
+.custom_font_bold {
+  font-family: Sprat, sans-serif;
+  font-weight: 600;
+}
+
+.custom_font_medium{
+  font-family: Sprat, sans-serif;
+  font-weight: 400;
+}
+
+.custom_font_light {
+  font-family: Sprat, sans-serif;
+  font-weight: lighter;
+}
+
+.custom_font_normal{
+  font-family: Sprat, sans-serif;
+}
