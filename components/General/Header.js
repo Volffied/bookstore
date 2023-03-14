@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useScrollPosition } from '@/utils/hook';
 
-export default function header() {
+export default function Header() {
     const router = useRouter();
     const [showMenu, setShowMenu] = useState(false);
     const scrollPosition = useScrollPosition();

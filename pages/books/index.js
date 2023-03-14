@@ -7,7 +7,7 @@ import {LimitText, ParseHtml} from '../../utils/hook';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 
-export default function books() {
+export default function Books() {
     const router = useRouter();
     const responsiveSwiperBook = [
         {

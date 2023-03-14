@@ -22,28 +22,28 @@ export default function footer() {
                 <div className="flex flex-col text-left md:text-right mt-10 md:mt-0 w-1/2 md:w-auto">
                     <p className={'capitalize font-normal text-xl'}>content</p>
                     <div className="flex flex-col gap-1 mt-4">
-                        <a href='/'><p className='text-base'>Blog</p></a>
-                        <a href='/'><p className='text-base'>Podcasts</p></a>
-                        <a href='/'><p className='text-base'>Books</p></a>
-                        <a href='/'><p className='text-base'>Subscription</p></a>
+                        <Link href='/'><p className='text-base'>Blog</p></Link>
+                        <Link href='/'><p className='text-base'>Podcasts</p></Link>
+                        <Link href='/'><p className='text-base'>Books</p></Link>
+                        <Link href='/'><p className='text-base'>Subscription</p></Link>
                     </div>
                 </div>
                 <div className="flex flex-col text-left md:text-right mt-10 md:mt-0 w-1/2 md:w-auto">
                     <p className={'capitalize font-normal text-xl'}>company</p>
                     <div className="flex flex-col gap-1 mt-4">
-                        <a href='/'><p className='text-base'>About</p></a>
-                        <a href='/'><p className='text-base'>Contact us</p></a>
-                        <a href='/'><p className='text-base'>Partnership</p></a>
-                        <a href='/'><p className='text-base'>Careers</p></a>
+                        <Link href='/'><p className='text-base'>About</p></Link>
+                        <Link href='/'><p className='text-base'>Contact us</p></Link>
+                        <Link href='/'><p className='text-base'>Partnership</p></Link>
+                        <Link href='/'><p className='text-base'>Careers</p></Link>
                     </div>
                 </div>
                 <div className="flex flex-col text-left md:text-right mt-10 md:mt-0 w-1/2 md:w-auto">
                     <p className={'capitalize font-normal text-xl'}>social</p>
                     <div className="flex flex-col gap-1 mt-4">
-                        <a href='/'><p className='text-base'>Instagram</p></a>
-                        <a href='/'><p className='text-base'>Facebook</p></a>
-                        <a href='/'><p className='text-base'>Linkedin</p></a>
-                        <a href='/'><p className='text-base'>Youtube</p></a>
+                        <Link href='/'><p className='text-base'>Instagram</p></Link>
+                        <Link href='/'><p className='text-base'>Facebook</p></Link>
+                        <Link href='/'><p className='text-base'>Linkedin</p></Link>
+                        <Link href='/'><p className='text-base'>Youtube</p></Link>
                     </div>
                 </div>
             </div>

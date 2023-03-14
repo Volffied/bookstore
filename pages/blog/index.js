@@ -7,7 +7,7 @@ import SwiperCustom from '@/components/General/Swiper';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
-export default function blog() {
+export default function Blog() {
     const router = useRouter();
 
     const responsiveSwiper = [
