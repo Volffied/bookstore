@@ -1,4 +1,4 @@
-import Layout from '@/components/layout'
+import Layout from '../components/Layout'
 import {LimitText, ParseHtml} from '../utils/hook';
 import React, {useEffect, useState, useCallback} from 'react';
 import SwiperCustom from '@/components/General/Swiper';
