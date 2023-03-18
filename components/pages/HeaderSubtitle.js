@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function HeaderSubtitle({subtitle}) {
     return (
         <>
-            <div className='py-3 border-t-2 border-b-2 flex justify-between my-6 items-center'>
+            <div className='py-3 border-t-2 border-b-2 flex justify-between my-6 items-center border-2 2xl:border-red-500 xl:border-blue-500 lg:border-lime-500 md:border-neutral-500 sm:border-yellow-500 border-orange-500'>
                 <div>
                     <p className={styleFont.custom_font_bold + " text-2xl md:text-3xl uppercase text-[#252525]"}>{subtitle}</p>
                 </div>
